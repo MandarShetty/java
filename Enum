@@ -1,0 +1,6 @@
+package A1ColorsApp;
+
+  public enum A1Colors
+  	{
+      gray,red,white,blue,pink
+  	}
