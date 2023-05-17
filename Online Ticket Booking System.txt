@@ -1,0 +1,81 @@
+Online Ticket Booking System 
+
+Functional Requirements
+1 User Registration and Authentication
+•	Users should be able to create an account by providing their name, email address, and password.
+•	The system should validate the user's email address during registration.
+•	Users should be able to log in to the system using their credentials.
+2 Event Browsing and Searching
+•	The system should display a list of available events with relevant details such as event name, date, time, and venue.
+•	Users should be able to search for events based on event name, category, date, or venue.
+3 Seat Selection and Booking
+•	Users should be able to select seats for an event from a seating layout or chart.
+•	The system should show the availability of seats in real-time.
+•	Users should be able to select multiple seats for booking.
+•	Users should be able to choose different seat categories (e.g., VIP, General, etc.) if applicable.
+4 Online Payment Integration
+•	The system should integrate with a secure online payment gateway to process ticket payments.
+•	Users should be able to select a payment method (credit card, debit card, net banking, etc.).
+•	The system should provide a confirmation and receipt after successful payment.
+5 Ticket Cancellation and Refund Management
+•	Users should be able to cancel their booked tickets within a specified time period.
+•	The system should calculate the refund amount based on the cancellation policy.
+•	The refunded amount should be credited back to the user's original payment method.
+User Profile Management
+•	Users should be able to view and update their profile information.
+•	Users should be able to view their booking history.
+•	Users should be able to change their password.
+
+
+    +--------------+        +------------+        +--------------+
+       |     User     |        |   Event    |        |    Ticket    |
+       +--------------+        +------------+        +--------------+
+       |   UserID     |        |  EventID   |        |   TicketID   |
+       |   Username   |        |  Name      |        |   EventID    |
+       |   Email      |        |  Date      |        |   SeatNumber |
+       |   Password   |        |  Time      |        |   Price      |
+       +--------------+        |  Venue     |        |   TicketType |
+                              +------------+        +--------------+
+                                     |
+                                     | 1     N
+                                     |
+                              +--------------+
+                              |    Booking   |
+                              +--------------+
+                              |  BookingID   |
+                              |  UserID      |
+                              |  TicketID    |
+                              |  BookingDate |
+                              |  Status      |
+                              +--------------+
+                                     |
+                                     | N     1
+                                     |
+                              +--------------+
+                              |   Payment    |
+                              +--------------+
+                              |  PaymentID   |
+                              |  BookingID   |
+                              |  PaymentMethod |
+                              |  Amount      |
+                              |  TransactionID |
+                              |  Status      |
+                              +--------------+
+                                     |
+                                     | N     1
+                                     |
+                              +--------------+
+                              |    Venue     |
+                              +--------------+
+                              |  VenueID     |
+                              |  Name        |
+                              |  Address     |
+                              |  Capacity    |
+                              +--------------+
+CREATE TABLE Users
+Events
+Tickets
+Bookings
+Payments
+
+

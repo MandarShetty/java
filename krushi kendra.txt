@@ -1,0 +1,140 @@
+krushi kendra
+
+ Functional Requirements
+
+1 Farmer Registration and Authentication
+Farmers should be able to create an account by providing their personal details such as name, contact information, and location.
+The system should validate and authenticate farmers' accounts during registration and login.
+
+2 Agricultural Information and Updates
+The system should provide access to a wide range of agricultural information, including crop cultivation techniques, pest control measures, fertilizer usage, etc.
+Farmers should be able to browse and search for relevant articles, blogs, and research papers related to agriculture.
+The system should allow farmers to subscribe to receive regular updates and newsletters.
+
+3 Crop and Livestock Management
+The system should provide guidance on crop selection, planting schedules, irrigation methods, and harvesting practices based on the farmer's location and other relevant factors.
+Farmers should be able to record and monitor crop-related activities such as fertilization, pest control, and yield management.
+The system should provide information and best practices for livestock management, including feeding, breeding, and healthcare.
+
+3.4 Weather Information and Forecasts
+The system should integrate with weather APIs to provide real-time weather information, including temperature, rainfall, humidity, and wind conditions.
+Farmers should be able to view weather forecasts for their specific location and receive alerts for adverse weather conditions.
+
+5 Market Prices and Trade Information
+The system should provide farmers with access to market prices for various agricultural commodities.
+Farmers should be able to view price trends, market demand, and trade information to make informed decisions regarding their produce.
+
+6 Government Schemes and Subsidies
+The system should provide information on government agricultural schemes, subsidies, loans, and support programs.
+Farmers should be able to access eligibility criteria, application procedures, and documentation requirements for various schemes.
+
+7 Online Training and Learning Resources
+The system should provide access to online training modules, videos, and educational resources related to agriculture.
+Farmers should be able to enhance their knowledge and skills through self-paced learning and training programs.
+
+Business entities
+
+Government Organization
+Article
+Crop
+Livestock
+Weather
+Market
+
+
+  +--------------+
+           |    Farmer    |
+           +--------------+
+           |   FarmerID   |
+           |   Username   |
+           |    Email     |
+           |   Password   |
+           +--------------+
+                 |
+                 | 1       N
+                 |
+           +--------------+
+           |    Expert    |
+           +--------------+
+           |   ExpertID   |
+           |   Username   |
+           |    Email     |
+           |   Password   |
+           +--------------+
+                 |
+                 | 1       N
+                 |
+           +--------------+
+           |   Article    |
+           +--------------+
+           |  ArticleID   |
+           |     Title    |
+           |    Content   |
+           |   AuthorID   |
+           +--------------+
+                 |
+                 | 1       1
+                 |
+           +--------------+
+           |    Crop      |
+           +--------------+
+           |    CropID    |
+           |     Name     |
+           |   Techniques |
+           |   Season     |
+           +--------------+
+                 |
+                 | 1       1
+                 |
+           +--------------+
+           |  Livestock   |
+           +--------------+
+           | LivestockID  |
+           |     Type     |
+           |    Breed     |
+           |    Age       |
+           +--------------+
+                 |
+                 | 1       N
+                 |
+           +--------------+
+           |    Weather   |
+           +--------------+
+           | WeatherID    |
+           |   Location   |
+           |  Temperature |
+           |   Rainfall   |
+           +--------------+
+                 |
+                 | 1       N
+                 |
+           +--------------+
+           |    Market    |
+           +--------------+
+           |   MarketID   |
+           |     Name     |
+           |  Location    |
+           |    Website   |
+           +--------------+
+                 |
+                 | 1       N
+                 |
+           +--------------+
+           | GovernmentScheme |
+           +--------------+
+           | SchemeID     |
+           |    Name      |
+           | Eligibility  |
+           |   Benefits   |
+           +--------------+
+                 |
+                 | 1       N
+                 |
+           +--------------+
+           | TrainingResource |
+           +--------------+
+           | ResourceID  |
+           |     Title    |
+           | Description |
+           |    URL       |
+           +--------------+
