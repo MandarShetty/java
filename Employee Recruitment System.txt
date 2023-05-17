@@ -96,3 +96,66 @@ job post
 Candidate
 Application
 Job Post
+
+
+
+
+
+1.git clone (link copy of repo)
+2.git add .
+3.git commit -m "abc"
+4.git push
+
+================================
+1.launch instance
+2.select ubuntu
+3.create key .ppk
+4.launch instance
+5.wait till running
+6.connect
+
+================================
+ubuntu opens
+
+1.sudo apt install
+2.sudo apt update
+==============================
+go to AWS page
+
+1.security groups
+2.click on latest wizard
+3.Action > inbound rules
+4.add rule > all traffic > anywhere ipv4
+5.save rule
+=================================
+open putty
+
+1.session > ip address
+2.data > ubuntu
+3.SSH > Auth > credentials > .ppk file insert >open >accept
+==============================================
+ubuntu-putty
+
+1.sudo apt install
+2.sudo apt update
+3.sudo apt install docke.io
+4.y/n > y
+5.git clone .....link of repo github.....
+6.ls
+7.cd ....../
+8.ls
+9.sudo docker build -t abc .
+10.sudo docker images
+11.sudo docker run -d -p 7667:7667 abc >(image name)
+12.sudo docker ps
+
+
+
+
+
+
+
+
+
+
+
